@@ -12,5 +12,8 @@ ADD data/scripts/configure_modsec.sh /tmp/configure_modsec.sh
 RUN chmod 766 /tmp/configure_modsec.sh && sync && \
     /tmp/configure_modsec.sh
 
+ADD data/supervisor/supervisord.conf /etc/supervisord.conf
+
 EXPOSE 80 443
-CMD
+
+CMD ["/usr/bin/supervisord"]
