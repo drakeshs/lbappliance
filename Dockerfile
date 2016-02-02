@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER Michael Duffy <mduffy@stunthamster.com>
-
+LABEL
 RUN apt-get update
 RUN apt-get install -y software-properties-common supervisor git apache2 libapache2-modsecurity libapache2-mod-rpaf
 RUN add-apt-repository ppa:vbernat/haproxy-1.6
