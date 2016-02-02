@@ -4,6 +4,7 @@
 rm -rf /etc/apache2/sites-enabled/000-default.conf
 rm -rf /etc/apache2/sites-available/000-default.conf
 rm -rf /etc/apache2/sites-available/default-ssl.conf
+rm -rf /etc/apache2/ports.conf
 
 # Enable mods
 a2enmod proxy
